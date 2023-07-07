@@ -1,0 +1,19 @@
+CREATE TABLE Cust(
+        name VARCHAR(100),
+        email VARCHAR(100),
+        pass varchar(100)
+    );
+	
+select * from cust;
+
+create table messages(
+         name Varchar(100),
+	     email VARCHAR(100),
+	     textmess VARCHAR,
+	     InDtTm timestamptz DEFAULT CURRENT_TIMESTAMP
+)
+
+select * from messages
+
+ALTER TABLE messages
+RENAME COLUMN email to pass;
